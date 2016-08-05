@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>studyFit</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+	
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+   	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+    <script src="https://use.fontawesome.com/262a295ee5.js"></script>
+
+    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+    <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <!--
+  ========================================
+  BODY starts here - NAVBAR
+  ========================================
+    -->
+  	
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	<div class="container">
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle" data-toggle"collapse" data-target=".navbar-collapse">
+                	<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="index.html">studyFit</a>
+            </div>
+            <div class="navbar-collapse collapse">
+            	
+                <!-- Navbar - left -->
+            	<ul class="nav navbar-nav navbar-left">
+<!--               	<li class="active"><a href="#">Home</a></li> -->
+					<li class="dropdown">
+                    	<a href="crashkurse.html" class="dropdown-toggle" data-toggle="dropdown">Crashkurse<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Universität Kassel</li>
+                        <li><a href="crashkurse.html">VWL 2</a></li>
+                        <li><a href="#">Mathe 1 für WiWis</a></li>
+                        <li><a href="#">Mathe 2 für WiWis</a></li>
+                        <li><a href="#">Statistik 2</a></li>
+                        <li><a href="#">BWL 2b - Steuerlehre by Ramon</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Abitur</li>
+                        <li><a href="#">Mathematik</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">weiter- Lernen</li>
+                        <li><a href="#">Webdesign (html,css,javascr., bootstrap)</a></li>
+                        <li><a href="#">Lernen lernen</a></li>
+
+                    </ul>
+                    
+                 	</li>
+                    
+					<li><a href="nachhilfe.html">private Nachhilfe</a></li>
+
+                 </ul>
+                 
+                 <!-- Navbar - right -->
+                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="#contact" data-toggle="modal">Kontakt</a></li>
+                    
+                    <!-- Header Button for Teacher -->
+                    <!--<li><div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Aktion <span class="caret"></span>
+                            </button>
+  					<ul class="dropdown-menu">
+   						<li><a href="#">Aktion</a></li>
+    					<li><a href="#">Andere Aktion</a></li>
+                        <li><a href="#">Irgendwas anderes</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Abgetrennter Link</a></li>
+                     </ul>
+                 	</div></li>
+                    -->
+                 	</ul>
+              </div>
+        </div>	
+    </div>
+    
+    
+    
+    <!--
+  ========================================
+  jumbo-top
+  ========================================
+    -->
+    
+    <div class="container" id="about">
+    	<div class="page-header">
+    		<h1>Über uns</small></h1>
+    	</div>
+    	<div class="jumbotron text-left" id="jumbo-top">
+        	<div class="headline-center">
+				<h2 id="about"><span><i class="fa fa-rocket fa-2x" aria-hidden="true"></i></span><small>Unsere Mission:</small><br>studyFit organisiert den Wissensaustausch zwischen Menschen zu fairen und nachhaltigen Bedingungen.
+				</h2>
+				<!-- <style>
+					#mission {
+						background-color:#fff;
+						}
+				</style> ---->
+
+				<h2 id="about"><span><i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i></span><small>Die Idee:</small><br> Eine flexible Lernhilfe bieten</h2><br><br>
+                <p>
+                  Die Idee zu studyFit hat einen pragmatischen Hintergrund und beginnt mit der alltäglichen Arbeit eines Nachhilfelehrers.<br> Als freie Mitarbeiter eines Nachhilfeinstituts erhält man in regelmäßigen Abständen Kontakte von Familien die Nachhilfe suchen.<br> Sobald man sich kennengelernt hat, beginnt jedes Mal das gleiche Spiel. <br>Es kommt zur Fragen: <b>Geben Sie ihre Nachhilfe auch privat?</b><br><br>Das Argument: beide Seiten profitieren. Da kein Institut an der Wertschöpfung beteiligt ist steigt der Stundenlohn für den Lehrer während der Preis für den Schüler sinkt.<br> An der Stelle muss der Nachhilfelehrer verneinen, da er dem Institut keine Kunden abwerben darf.<br><br>
+                <b>Ist dieses Spiel heute noch zeitgemäß?</b><br><br>
+                Die meisten Nachhilfesuchenden wollen keinen Vertrag unterschreiben und keine Mindestlaufzeit festlegen. Sie suchen einen zuverlässigen Studenten, den sie privat engagieren können. Weil sie in der Regel keinen Passenden kennen, gehen sie den Weg über ein Institut. <br><br>
+                
+                Hier wollen wir helfen. Zwar sind Nachhilfe-Kleinanzeigen schon überall zu finden, jedoch auf vielen unterschiedlichen Plattformen, sodass ein gutes <b>Matching</b> schwer ist. <br>
+                </p>
+                <!---
+                </p>
+                <h4>Wir glauben:</h4>
+                <p class="text-center">Um Schüler/Studenten mit Nachhilfelehrern in Verbindung zu bringen, muss kein Institut dazwischen geschaltet sein, das den Preis für den Schüler in die höhe treibt und den Lohn für den Lehrer dennoch niedrig hält. Wir glauben an eine solidarische, hilfsbereite und clevere Gesellschaft, in der sich Menschen untereinander verlässlich helfen und dadurch doppelt profitieren.
+                </p> -->
+                <p>
+                    
+                    
+                <h2 id="about"><span><i class="fa fa-flag-o fa-2x" aria-hidden="true"></i></span><small>Unser Angebot:</small><br> Alles was dem Lernen nützt.</h2><br><br>
+                <p>
+                  Herkömmliche, <b>private Nachhilfe</b> ist eine der effektivsten Möglichkeiten um komplexe und neue Inhalte teifgründig zu verstehen. <br>Mit dem Ziel, gemeinsam einen Sachverhalt zu erarbeiten, kann ein Nachhilfelehrer an den Stellen helfen, wo der Schüler selbst nicht weiter kommt.<br>Da wir der Überzeugung sind das private Nachhilfe die beste Form der Nachhilfe ist, bieten wir unseren Vermittlungs-Service kostenlosen an. <br>
+                  <p class="text-center"><a href="nachhilfe.html">Hier private Nachhilfe anbieten oder suchen</a></p><br><br>
+                <p>
+                  <b>Crashkurse</b> sind ein wunderbarer Weg, ein großes Themenkomplex in komprimierter, und zusammengefasster Form in kurzer Zeit zu verstehen. Ein Crashkurs sorgt für Überblick und behandelt detailiert die Kern-Elemente eines Themas. Je nach eigenem Zutun, kann ein Crashkurs die Basis für eine sehr gute Leistung sein, oder zumindest das Bestehen der Prüfung ermöglichen.<br>Da wir in Kassel studieren, bieten wir in für Kasseler- Studenten Crashkurse in einigen Uni-Scheinen an.
+                </p><br>
+                <p class="text-center"><a href="crashkurse.html">Hier eine Übersicht unserer Crashkurse</a></p><br>
+
+                <p>Möchtest du in deiner Stadt Crashkurse anbieten? Auf Basis einer <b>fairen Umsatzbeteiligung!</b> erarbeiten wir mit dir gerne ein Konzept! <a href="#">Nimm Kontakt auf.</a></p>  
+                
+
+                <h2><span><i class="fa fa-usd fa-2x" aria-hidden="true"></i></span>Sponsoring</h2><br>
+                
+                <br>
+                <p>
+                Erhältlich sind einwöchiges Sponsorings für die studyFit-Website und die studyFit-Social Media Channels.<br> Das ist wunderbarer Weg dein Produkt oder Service einer speziellen Audience von jungen Eltern, Technik- & Fortschritts- Liebhabern und lernwilligen Mitgliedern der Y&Z-Generation vorzustellen.<br><br>
+                  <li>Unser Sponsoring ist exklusiv. Nur ein Sponsor pro Woche.</li>
+                  <li>Ein Promotion-Item des Sponsors erscheint auf der studyFit-Startseite sowie im Anhang der Vermittlungsmails.</li><br></p>
+                <p>Um ein Sponsoring zu vereinbaren oder für weitere Informationen, email an sponsoring@studyfit.com.</p>
+
+            </div>
+            
+       	</div>
+    </div> 
+        
+    
+    <!--
+  ========================================
+  jumbo-bottom
+  ========================================
+    -->
+    <div class="container">
+    <div class="jumbotron text-center" id="jumbo-bottom">
+        	
+        
+            
+            <h4>Wir sind immer auf der Suche nach Menschen die gerne helfen und eine Freude daran haben anderen etwas zu erklären. 
+            </h4>
+            <p> Trage dich jetzt <b>kostenlos</b> in den Nachhilfe-Lehrer Newsletter ein, um private Anfragen aus deiner Gegend zu erhalten. 
+            </p>
+			<br>
+            <br>
+			<h1>studyFit</h1>
+            <p>#AllesWasDemLernenNützt</p>
+           
+    </div>
+    </div>
+         
+    <!--
+  ========================================
+  navbar-fixed-bottom
+  ========================================
+    -->     
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    	<div class="container">
+        	<div class="navbar-text pull-left">
+            	<p> &copy; easyStudy </p>
+            </div>
+            <div class="navbar-text pull-right">
+            	<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a zref="#"><i class="fa fa-twitter fa-2x"></i></a>
+            </div>
+         </div>
+     </div>
+     <div class="modal fade" id="contact" role="dialog">
+     	<div class="modal-dialog">
+        	<div class="modal-content">
+                  <form class="form-horizontal" role="form">
+                        
+                        <div class="modal-header">
+                            <h4>Contact</h4>
+                        </div>
+                        <div class="modal-body">
+                        	<div class="form-group">
+                            	<label for="contact-name" class="col-sm-2 control-laber">Name</label>
+                            
+                            </div>
+                            <!--<p>Für generelle Information kontaktieren Sie bitte info@easyStudy.de</p>
+                            <p>Für Anfragen zu Crashkursen oder privater Nachhilfe nutzen Sie bitte folgende Formulare</p>-->
+                        </div>
+                        <div class="modal-footer">
+                        <a class="btn btn-primary" data-dismiss="modal">close</a>
+                        </div>
+                    </form>
+            </div>
+         </div>
+     </div>
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
