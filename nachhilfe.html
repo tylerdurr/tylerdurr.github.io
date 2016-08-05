@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <title>studyFit</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+   	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://use.fontawesome.com/262a295ee5.js"></script>
+
+    <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
+    <!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!--
+  ========================================
+  BODY starts here - NAVBAR
+  ========================================
+    -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	<div class="container">
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle" data-toggle"collapse" data-target=".navbar-collapse">
+                	<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="index.html">studyFit</a>
+            </div>
+            <div class="navbar-collapse collapse">
+            	
+                <!-- Navbar - left -->
+            	<ul class="nav navbar-nav navbar-left">
+<!--               	<li class="active"><a href="#">Home</a></li> -->
+					<li class="dropdown">
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Crashkurse<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Universität Kassel</li>
+                        <li><a href="crashkurse.html">VWL 2</a></li>
+                        <li><a href="#">Mathe 1 für WiWis</a></li>
+                        <li><a href="#">Mathe 2 für WiWis</a></li>
+                        <li><a href="#">Statistik 2</a></li>
+                        <li><a href="#">BWL 2b - Steuerlehre by Ramon</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Abitur</li>
+                        <li><a href="#">Mathematik</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">weiter- Lernen</li>
+                        <li><a href="#">Webdesign (html,css,javascr., bootstrap)</a></li>
+                        <li><a href="#">Lernen lernen</a></li>
+
+                    </ul>
+                    
+                 	</li>
+                    
+					<li><a href="nachhilfe.html">private Nachhilfe</a></li>
+
+                 </ul>
+                 
+                 <!-- Navbar - right -->
+                 <ul class="nav navbar-nav navbar-right">
+    				 <li><a href="about.html">Über uns</a></li>
+					 <li><a href="#contact" data-toggle="modal">Kontakt</a></li>
+                    
+                    <!-- Header Button for Teacher -->
+                    <!--<li><div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Aktion <span class="caret"></span>
+                            </button>
+  					<ul class="dropdown-menu">
+   						<li><a href="#">Aktion</a></li>
+    					<li><a href="#">Andere Aktion</a></li>
+                        <li><a href="#">Irgendwas anderes</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Abgetrennter Link</a></li>
+                     </ul>
+                 	</div></li>
+                    -->
+                 	</ul>
+              </div>
+        </div>	
+    </div>
+    
+    <!--
+  ========================================
+  container page-header, page-body, col
+  ========================================
+    -->
+    	
+	
+    <div class="container text-center" id="abschnitt1">
+  		<div class="page-header">
+    		<h1 class="text-left"><!--<span><i class="fa fa-comments-o fa-2x" aria-hidden="true"></i></span>-->private Nachhilfe <small>für Schüler und Studenten</small></h1>
+    	</div>
+		<div class="page-body">
+					<h4><b>studyFit vermittelt</b> kostenlos <b>private Nachhilfelehrer.</b></h4>
+		</div>
+
+		
+		<script>
+		function show(id) {
+			if(document.getElementById) {
+				var mydiv = document.getElementById(id);
+				mydiv.style.display = (mydiv.style.display=='block'?'none':'block');
+			}
+		}
+		</script>
+		<h2><a href="#" onclick="javascript:show('divText'); return false">
+		Ich <u>suche</u> private Nachhilfe <b>in Kassel und Umgebung</b></a></h2>
+
+		<div style="display: none" id="divText"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+		
+
+		
+				
+		<!--        <div class="col-sm-8 text-left" id="abschnitt1">
+		-->        <div class="jumbotron text-center" id="jumbo-top-home">
+					
+				<div class="container text-center">
+						<h2><a href="#">
+								<img src="img/herkulesicon2.jpg" alt="blablabla">
+							</a>Nachhilfeangebot für <b>Kassel</b>: </h2>
+						<div class="col-md-6 text-left">
+						<h3 class="text-left" id="heading_nha"><b>Für Studenten der Universität Kassel:</b></h3>
+						<ul>
+							<!--<li><h3 class="text-left" id="heading_nha"><b>Für Studenten der Universität Kassel:</b></h3></li>
+								<ul>-->
+									<li><b>Mathematik I & II für Wiwis</b></li>
+									<li><b>Analysis & Lineare Algebra für E.Technik und Informatik</b></li>
+									<li><b>VWL II Makroökonomie,Voßkampp und Michaelis</b></li>
+									<li><b>Statisik 2 - Induktive Statistik, Kosfeld</b></li>
+									<li><b>BWL 2b - Steuerlehre</b></li>
+							   <!--</ul>-->
+						</ul>
+						</div>
+						<div class="col-md-6 text-left">
+						<h3 class="text-left" id="heading_nha"><b>Für Schüler von der 5. Klasse bis zum Abitur:</b></h3>
+						<ul>
+									<li><b>Mathematik, LK und GK</b></li>
+									<li><b>Englisch, LK und GK</b></li>
+						 </ul>
+						 
+						</div>
+				</div>
+				
+				<div class="cold-md-12">
+						<p id="subp"><br><br>Das <a href="#" alt="blabla">studyFit-Team</a> besteht aus drei erfahrenen Nachhilfelehrern, die sich zusammengeschlossen haben und gemeinsam die genannten Fächer abdecken: <br>
+						<br><i><u>Bitte beachten:</u> Je nach Fach das Sie anfragen reagiert ein unterschiedlicher Nachhilfelehrer. Wenn wir kein Angebot machen können, leiten wir die Anfrage anonymisiert an die bei uns registrierten Nachhilfelehrer weiter. Wenn ein Nachhilfelehrer die Anfrage übernimmt, stellen wir den Kontakt her.</i>
+						</p>
+				</div>
+				 <style>
+					#abschnitt1 {
+						width:max;
+					}
+				 </style>
+				 <!--</div>-->
+				 </div>
+				<div class="container">
+				<div class="row">
+					<div class="col-sm-8 text-left" id="abschnitt1">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+							  <h3 class"panel-title">Service</h3>
+							</div>
+						
+							  <table class="table table-bordered">
+							  
+							  <tbody>
+								  <tr>
+									  <td><b>Geld-zurück-Garantie</b></td>
+									  <td>wenn Sie nach einem Termin unzufrieden sind, müssen Sie nicht bezahlen</td>
+								  </tr>
+								  <tr>
+									  <td><b>keine Vertragsbindung</b></td>
+									  <td>Sie zahlen immer nur für die geleistete Unterrichtsstunde und können jederzeit aufhören den Nachhilfelehrer zu beauftragen.</td>
+								  </tr>
+								  <tr>
+									  <td><b>Flexibilität</b></td>
+									  <td>bei logistischen Angelegenheiten (Sie möchten mehrere Schüler oder Studenten für <b>Gruppennachhilfe</b> anmelden, die Nachhilfe soll außerhalb Kassels stattfinden, zu ungewöhnliche Uhrzeiten,..) finden wir eine individuelle Lösung.</td>
+								  </tr>
+								  <tr>
+									  <td><b>Regelmäßigkeit</b></td>
+									  <td>regelmäßige, punktuelle oder einmalige Termine, Sie legen vorab fest</td>
+								  </tr>
+								  <tr>
+									  <td><b>Preis</b></td>
+									  <td>Ist individuell. Bei Ihrer Anfrage bitte wir Sie einen Vorschlag zu machen.</td>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+				  </div>
+								<style type="text/css">
+									.col-sm-8 ul {
+										padding-left: 72px;
+									}
+									.col-sm-8 h2 {
+										text-decoration:none;
+									}
+								</style>
+					<div class="col-sm-4 text-left">
+							
+							<h3>Einsatzgebiet Kassel</h3>
+							<p>Die Nachhilfe kann <b>bei Ihnen zu Hause</b>, <b>bei uns zu Hause</b>, in einem Cafe, am Herkules oder in <b>öffentlichen Räumlichkeiten der Universität Kassel</b> stattfinden. Ort, Preis und die Regelmäßigkeit der Termine vereinbaren Sie mit jedem Lehrer individuell.</p>
+							<a href="#" class="thumbnail">
+								<img src="img/viewKS.jpg" alt="blablabla">
+							</a>
+							Foto: <a title="Blick über Kassel, Bergpark Wilhelmshöhe (Foto 9556)" href="https://www.dirk-vorderstrasse.de/fotos/details/blick-ueber-kassel-bergpark-wilhelmshoehe/9556/-/" target="_blank">Blick über Kassel, Bergpark Wilhelmshöhe</a>, Urheber: Dirk Vorderstraße, Lizenz: <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.de" title="Lizenz-Urkunde Creative Commons–Lizenz Attribution 3.0 Unported" target="_blank">CC BY 3.0</a>
+					</div>
+					</div>
+					</div>
+			<style type="text/css">
+				#abschnitt1 {
+					/* padding-top:51px; */
+				}
+				.page-body {
+					margin-bottom: 35px;
+				}
+				.col-sm-4 {
+					padding-top:36px;
+				}
+			
+			</style>
+			<div class="jumbotron text-center" id="jumbo-top-home">
+				<div class="container">
+						<h2><a href="#contact" data-toggle="modal">Jetzt den richtigen Nachhilfelehrer kennenlernen</a></h2><br>
+				 </div>
+			</div>
+		</div>
+							</div>
+
+    <!--
+  ========================================
+  jumbo-top
+  ========================================
+    -->
+    <script>
+		function show(id) {
+			if(document.getElementById) {
+				var mydiv = document.getElementById(id);
+				mydiv.style.display = (mydiv.style.display=='block'?'none':'block');
+			}
+		}
+		</script>
+		<h2><a href="#" onclick="javascript:show('divText2'); return false">
+		Ich <u>suche</u> private Nachhilfe <b>in einer anderen Stadt</b></a></h2>
+	    <div class="container text-center" id="abschnitt1">
+		<div style="display: none" id="divText2">
+		<span class="glyphicon glyphicon-menu-down text-center" aria-hidden="true"></span>
+			<div class="jumbotron text-center" id="jumbo-top-home">
+					
+				<div class="container text-center">
+				
+					<h2>Nachhilfelehrer-Vermittlungsservice</h2>
+					<br>
+					<p>Wir können mit unserem eingeschränkten Nachhilfeangebot nicht jedem helfen, und vorallem nicht über die Grenzen Kassels hinaus. 
+					<br><br>
+					<b>Da wir der Überzeugung sind das private Nachhilfe die beste Form der Nachhilfe ist, bieten wir einen kostenlosen Vermittlungs-Service an.</b>
+					<br><br>            
+					Nachhilfelehrer können sich kostenlos bei uns registrieren und angeben in welcher Stadt sie welche Fächer anbieten. 
+					Wenn nun eine Anfrage für diese PLZ kommt, wird das nachgefragte Fach sowie das Preisangebot automatisch an den Lehrer vermittelt.
+					Wenn er die Konditionen akzeptiert und den Auftrag annimmt, leiten wir die Kontaktdaten an ihn weiter. 
+					<div class="col-md-6 text-center" id="react">
+					<p><a href="#">Nachhilfe anfragen</a></p>
+					</div>
+					<div class="col-md-6 text-center" id="react">
+
+					<p><a href="#">Als Nachhilfelehrer registrieren</a></p>
+					</div>
+					</div>
+				
+			</div>
+        </div>
+
+		</div>
+
+				<h2><a href="#teach" data-toggle="modal">Ich <u>biete</u> private Nachhilfe an</a></h2>        
+        
+    
+    <!--
+  ========================================
+  ROW starts here
+  ========================================
+    -->
+    <div class="container">
+         <div class="row">
+         	<div class="text-center">
+            	<br><br><br><br>
+                <h2><span class="glyphicon glyphicon-list-alt fa-2x" aria-hidden="true"></span>Was gute Nachhilfe auszeichnet</h2>
+                <h4>Nachhilfe ist &ne; Nachhilfe - worauf wir achten, und jeder Lehrer achten sollte.</h4>
+            </div>
+         	<div class="col-md-4">
+            	<h3><span class="glyphicon glyphicon-signal" aria-hidden="true"></span>nachhaltig</h3>
+                <p>Es bleibt erfolglos sich mit fortgeschritten Themen zu beschäftigen wenn die Grundlagen fehlen. Durch eine <b>individuelle Einführung</b> wird jeder Schüler an der Stelle abgeholt, wo er stehen geblieben ist, und sicher begleitet zum Ziel gebracht.<br> Wer neue Themen <b>von Grund auf</b> versteht, und zusätzlich noch in einem <b>Kontext einordnen</b> kann, speichert das Gelernte langfristig ab.</p>
+            </div>
+            <div class="col-md-4">
+            	<h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span>zielorientiert</h3>
+                <p>Bevor die Nachhilfe richtig startet müssen die Rahmenbedingungen besprochen werden. <br><b>Welche Ziele sollen in welcher Zeit erreicht werden?</b><br>Soll ein grundlegendes Verständnis für Mathematik aufgebaut werden oder ist das Ziel die nächste Klausur zu bestehen?</p>
+            </div>
+            <div class="col-md-4">
+                <h3><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>realitätsnah</h3>
+                <p>Wer keinen Rahmen hat, in den er neue Themen schematisch einordnen kann, wird die Zusammenhänge nur sehr schwer verstehen. Durch einfache Beispiele aus der Betriebswirtschaftslehre lässt sich die Differential- und Integralrechnung sehr gut veranschaulichen und erklären. <b>Beispiele zu finden, die ein Schüler aus dem Alltag kennt und deren Lösung er logisch findet, das ist die Kunst guter Nachhilfe.</b></p>
+            </div>
+         </div>
+         <div class="row">
+         	<div class="col-md-4">
+            	<h3><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>sicher</h3>
+                <p><strong>Keine Vertragsbindung</strong> und <strong>keine Mindestlaufzeit</strong>. Sie müssen nicht im Voraus bezahlen sondern können bequem in bar nach jeder absolvierter Nachhilfestunde bezahlen. Wenn Sie nicht zufrieden mit der Nachhilfe waren, müssen Sie nichts bezahlen (-> <b>Geld-zurück-Garantie</b>) und können jederzeit aufhören neue Termine mit dem Lehrer zu vereinbaren</p>
+            </div>
+            <div class="col-md-4">
+            	<h3><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>flexibel</h3>
+                <p>Bei privater Nachhilfe ist Flexibilität nicht nur ein Begriff. Ohne logistische oder bürokratische Hindernisse kann ein Termin auch mal Wochenende, Abends oder im Cafe stattfinden, eben wie es beiden Partein am besten passt. Sie möchten Nachhilfe für zwei ihrer Kinder bei Ihnen zu Hause? Kein Problem, wir finden eine individuelle Lösung!</p>
+            </div>
+            <div class="col-md-4">
+                <h3><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>solidarisch</h3>
+                <p>Der Nachhilfemarkt ist groß und die Nachfrage steigt kontinuierlich an. Um Schüler/Studenten mit Nachhilfelehrern in Verbindung zu bringen, muss kein Institut dazwischen geschaltet sein, das den Preis für den Schüler in die höhe treibt und den Lohn für den Lehrer dennoch niedrig hält. Wir glauben an eine solidarische und offene Gesellschaft, in der sich Menschen untereinander verlässlich helfen, und dadurch doppelt profitieren.</p>
+            </div>
+         </div>
+    </div>
+    
+    
+    <!--
+  ========================================
+  jumbo-bottom
+  ========================================
+    -->
+    <div class="container">
+    <div class="jumbotron text-center" id="jumbo-bottom">
+        	
+        
+            <h4>Ein bisschen Inspiration gefällig? Entdecke interessante <a href="#inspiration">Lern-Tools</a> oder schau in unseren <a href="#">Social Media Kanälen</a>. 
+            <h4>Wir sind immer auf der Suche nach Menschen die gerne helfen und eine Freude daran haben anderen etwas zu erklären. 
+            </h4>
+            <p><a href="#teach" data-toggle="modal">Registrier dich <b>kostenlos</b></a> als Nachhilfelehrer und erhalte private Anfragen aus deiner Gegend.<p>
+            </p>
+			<br>
+            <br>
+			<h1>studyFit</h1>
+            <p>#AllesWasDemLernenNützt</p>
+            
+    </div>
+    </div>
+         
+	<!--
+  ========================================
+  NAVBAR-fixed-bottom
+  ========================================
+    -->
+    
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    	<div class="container">
+        	<div class="navbar-text pull-left">
+            	<p> &copy; easyStudy </p>
+            </div>
+            <div class="navbar-text pull-right">
+            	<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a zref="#"><i class="fa fa-twitter fa-2x"></i></a>
+            </div>
+         </div>
+     </div>
+     <div class="modal fade" id="teach" role="dialog">
+     	<div class="modal-dialog">
+        	<div class="modal-content">
+                  <form class="form-horizontal" role="form">
+                        <div class="modal-header">
+                            <h4><span class="glyphicon glyphicon-education fa-2x" aria-hidden="true"></span>Nachhilfelehrer oder Dozent?</h4>
+                        </div>
+                        <div class="modal-body">
+							<p>Wenn du dich bei uns registrierst, leiten wir private Nachhilfeanfragen aus deiner Umgebung automatisch an dich weiter. <br>
+							Du hast die Möglichkeit eine Anfrage anzunehmen oder ein Gegenangebot zu machen.<br>
+							Wenn es zu einer Einigung kommt erheben wir eine obligatorische Vermittlerpauschale, um unsere Kosten zu decken. <br></p>
+							<p><u>*<b>einmalige</b> Vermittlerpauschale:</u> Bei einer Nachhilfeanfrage gibt der Suchende an, wie häufig die Nachhhilfe stattfinden soll. Daran bemisst sich die Vermittlungspauschale. 
+              Zur Auswahl stehen: 
+							<ul>
+								<u>kurzzeitiges Engagement:</u>
+										<li>1-3 mal vor einer Klausur <b>&rarr; Vermittlerpauschale: 5€</b></li>
+										<li>mehr als 3 mal vor einer Klausur<b>&rarr; Vermittlerpauschale: 5€</b></li><br>
+								<u>mittel- bis langfristiges Engagement:</u>
+
+										<li>1x wöchentlich, circa 3 Monate <b>&rarr; Vermittlerpauschale: 20€</b></li>
+										<li>1x oder mehrmals wöchentlich, länger als 3 Monate <b> &rarr;Vermittlerpauschale: 30€</b></li>
+							</ul>
+              <p>Wenn du einen Nachhilfeanfrage annimmst, teilen wir dir die Kontaktinformationen der des Anfragers mit. <b>Nachdem</b> der Kontakt hergestellt wurde, ziehen wir nach deiner Freigabe die Vermittlerpauschale bequem von deinem Konto ein. </p>
+							
+              <h4 class="underline">Jetzt als privater Nachhilfelehrer registrieren.</h4>
+                        	    <div class="form-group">
+                              <label for="contact-name" class="col-sm-2 control-laber">Fach<span class="required_new">*</span></label>
+                              <div class="col-sm-10">
+                                  <select class="form-control">
+                                      <option>Mathematik</option>
+                                        <option>Englisch</option>
+                                        <option>Deutsch</option>
+                                    </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                            	<label for="contact-city" class="col-sm-2 control-laber">Stadt<span class="required_new">*</span></label>
+                            	<div class="col-sm-10">
+                                	<input type="email" class="form-control" id="contact-email" placeholder="Kassel, Berlin, Barcelona,..">
+                            	</div>
+                            </div>
+                            <div class="form-group">
+                              <label for="contact-city" class="col-sm-2 control-laber">PLZ oder PLZ-Bereich</label>
+                              <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="contact-city" placeholder="PLZ (bei mehreren bitte mit Komma trennen)">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                        <a class="btn btn-primary" data-dismiss="modal">weiter</a>
+                        </div>
+                    </form>
+            </div>
+         </div>
+     </div>
+     <div class="modal fade" id="contact" role="dialog">
+     	<div class="modal-dialog">
+        	<div class="modal-content">
+                  <form class="form-horizontal" role="form">
+                        <div class="modal-header">
+                            <h4>Contact</h4>
+                        </div>
+                        <h4 class="unterline">Jetzt eine Nachhilfeanfrage stellen</h4>
+                        <div class="modal-body">
+                        	<div class="form-group">
+                            	<label for="contact-subject" class="col-sm-2 control-laber">Unterrichtsfach</label>
+                            	<div class="col-sm-10">
+                                	<input type="text" class="form-control" id="contact-betreff" placeholder="z.B. Mathenachhilfe, ">
+                            	</div>
+                            </div>
+                        	<div class="form-group">
+                            	<label for="contact-city" class="col-sm-2 control-laber">Stadt</label>
+                            	<div class="col-sm-10">
+                                	<input type="text" class="form-control" id="contact-name" placeholder="Vor- und Nachname">
+                            	</div>
+                            </div>
+							<div class="form-group">
+                            	<label for="contact-telefon" class="col-sm-2 control-laber">Telefon</label>
+                            	<div class="col-sm-10">
+                                	<input type="email" class="form-control" id="contact-email" placeholder="Mobil- oder Festnetznummer">
+                            	</div>
+                            </div>
+                            <div class="form-group">
+                            	<label for="contact-email" class="col-sm-2 control-laber">Email</label>
+                            	<div class="col-sm-10">
+                                	<input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
+                            	</div>
+                            </div>
+                            <div class="form-group">
+                            	<label for="contact-city" class="col-sm-2 control-laber">Stadt</label>
+                            	<div class="col-sm-10">
+                                	<input type="email" class="form-control" id="contact-city" placeholder="Kassel, Berlin, Barcelona,..">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            	<label for="contact-name" class="col-sm-2 control-laber">Fach</label>
+                            	<div class="col-sm-10">
+                                	<select class="form-control">
+                                    	<option>Mathematik</option>
+                                        <option>Englisch</option>
+                                        <option>Deutsch</option>
+                                        <option>Mathematik</option>
+                                        <option>Englisch</option>
+                                        <option>Deutsch</option>
+                                    </select>
+                            	</div>
+                            </div>
+                            <div class="form-group">
+                            	<label for="contact-name" class="col-sm-2 control-laber">Angebot für 
+                                	<select>
+                                		<option>90 Minuten</option>
+                                    	<option>60 Minuten</option>
+                                	</select>
+                                </label>
+                                <div class="col-sm-10">
+                                	<input type="text" class="form-control" id="contact-price" placeholder="z.B. 20€">
+                            	</div>
+                                </label>
+                            </div>
+                            
+                        	<div class="form-group">
+                            	<label for="contact-betreff" class="col-sm-2 control-laber">Regelmäßigkeit</label>
+                            	<div class="col-sm-10">
+                                	<select class="form-control">
+                                    	<option>1-3 Termine vor einer Klausur</option>
+                                        <option>>3 Termine vor einer Klausur</option>
+                                        <option>1x wöchentlich, längerer Zeitraum</option>
+                                        <option>mehrmals wöchentlich, längerer Zeitraum</option>
+                                    </select>
+                                </div>
+                            </div>
+							<div class="form-group">
+                            	<label for="contact-message" class="col-sm-2 control-laber">Nachricht</label>
+                            	<div class="col-sm-10">
+                                <textarea class="form-control" rows="4"></textarea>
+                            	</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <a class="btn btn-primary" data-dismiss="modal">close</a>
+                        </div>
+                    </form>
+            </div>
+         </div>
+    <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Binde alle kompilierten Plugins zusammen ein (wie hier unten) oder such dir einzelne Dateien nach Bedarf aus -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
